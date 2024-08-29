@@ -27,3 +27,11 @@ print("\n", cocina)
 
 #Eliminar una tupla
 del cocina #"del" Elimina la tupla
+
+####Repaso de "tuplas"####
+
+#Dentro de tuplas podemos usar: index, count, len
+#En tuplas se puede convertir de tupla a lista y de lista a tupla
+tupla = (4, "Hola", 6.78, [1, 2, 78], 4, "Chau") #Puede tener diferentes tipos de datos dentro
+print(tupla)
+print(4 in tupla) #Respuesta booleana

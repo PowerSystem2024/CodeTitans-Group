@@ -1,4 +1,5 @@
 #Clase 1 practica con "listas"
+#Las listas se conocen como arrays o vectores en otros lenguajes
 #Las listas son "Mutables" se pueden modificar
 
 #Lista con nombres
@@ -38,6 +39,10 @@ print(len(nombres)) #Le pasamos como parametro la lista
 
 #Agregamos un elemento a nuestra lista
 nombres.append("Raul") #"append" agrega un elemento al final de la lista
+nombres.append([1, 2, 3]) #tipo lista de elementos
+nombres.append(True) #tipo bolleano
+nombres.append(10.45) #tipo float
+nombres.append(8) #tipo entero
 print(nombres)
 
 #Insertar un elemento en un indice especifico
@@ -65,3 +70,39 @@ print(nombres)
 #Eliminar la lista completa
 del nombres
 print(nombres)
+
+###Repaso de listas####
+
+#Concatenar listas
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+lista3 = lista1 + lista2
+print(lista3)
+
+#Agregar elementos a una lista "concatenada"
+lista3.extend([7, 8, 9]) #con el metodo ".extend()" agregamos elementos
+print(lista3)
+
+#Ver en que indice esta un elemento
+print(lista3.index(5)) #con el metodo ".index()" vemos en que lugar esta el elemento de la lista
+#print(lista3.index(0)) Da error por no ser un elemento de la lista
+
+#Como saber cuantos valores repetidos hay en una lista
+print(lista3.count(1)) #Con ".count()" nos dice cuantos elementos repetidos hay dentro de una lista
+
+#Cambiar el sentido de una lista
+lista3.reverse() #Con ".reverse()" cponemos la lista al reves
+print(lista3)
+
+#Multiplicar una lista repitiendo sus elementos
+lista = [1, 2, 3] * 2
+print(lista)
+
+lista = lista * 2
+print(lista)
+
+#Metodos de ordenamient0
+lista3.sort() #Ordena los elementos ascendentemente con ".sort()"
+print(lista3)
+lista3.sort(reverse=True) #Ordena de manera descendente
+print(lista3)
