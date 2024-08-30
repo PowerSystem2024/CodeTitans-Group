@@ -1,35 +1,33 @@
-@import './base.css';
+@import './base.css'; /* Importa el archivo CSS base que contiene estilos comunes o globales */
 
+/* Estilos para el contenedor principal de la aplicación */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  max-width: 1280px; /* Define un ancho máximo para el contenedor*/
+  margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+  padding: 2rem; /* Agrega un espacio interno alrededor del contenido */
+  font-weight: normal; /* Define el peso de la fuente*/
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* Estilos para enlaces */
+a {
+  text-decoration: none; /* Elimina la subrayado predeterminado de los enlaces */
+  color: var(--vt-c-white); /* Aplica el color definido en la variable CSS*/
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: flex; /* Aplica una distribución flexible al contenedor principal */
+    flex-direction: column; /* Organiza los elementos del contenedor en una columna */
+    font-size: small; /* Reduce el tamaño de la fuente*/
+  }
+}
+
+/* Media query para pantallas tamaño desktop*/
+@media (min-width: 1024px) {
+  #app {
+    display: flex; /* Aplica una distribución flexible al contenedor principal */
+    flex-direction: column; /* Organiza los elementos del contenedor en una columna */
+    width: 80%; /* Define el ancho del contenedor como el 80% del ancho de la pantalla */
   }
 }
