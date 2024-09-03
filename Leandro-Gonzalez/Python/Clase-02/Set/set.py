@@ -4,7 +4,7 @@ print(planetas)
 print(len(planetas)) #"len" nos muestra el largo de nuestro set
 print("Marte" in planetas) #Revisar si un elemento existe dentro del set (Devuelve un booleano)
 
-#Agregar un elemento a nuestro ser
+#Agregar un elemento a nuestro set
 planetas.add("Tierra") # add es una funcion (No se pueden agregar elementos duplicados). Se podria utilizar para guardar num de "DNI"
 print(planetas)
 
