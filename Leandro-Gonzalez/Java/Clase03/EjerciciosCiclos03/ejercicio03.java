@@ -31,5 +31,8 @@ public class ejercicio03 {
         } while (numero != aleatorio);
 
         System.out.println("\tAdivinaste el numero " + conteo + " intentos");
+
+        // Cierre del objeto Scanner
+        entrada.close();
     }
 }

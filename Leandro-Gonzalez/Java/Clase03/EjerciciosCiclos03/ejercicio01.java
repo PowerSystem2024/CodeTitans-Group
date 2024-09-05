@@ -25,6 +25,9 @@ public class ejercicio01 {
             numero = Integer.parseInt(entrada.nextLine());
         }
         System.out.println("El numero ingresado es " + numero + " Finaliza el programa");
+
+        // Cierre del objeto Scanner
+        entrada.close();
     }
 
 }

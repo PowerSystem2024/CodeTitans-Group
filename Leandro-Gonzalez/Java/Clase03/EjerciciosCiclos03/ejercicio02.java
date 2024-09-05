@@ -1,4 +1,5 @@
-/*Perdir numeros hasta que se teclee uno negativo
+/*
+ *Perdir numeros hasta que se teclee uno negativo
  * Mostrar cuantos numeros se han introducido
  * Primero con la clase Scanner
  * Luego con la clase JOption
@@ -22,5 +23,7 @@ public class ejercicio02 {
         }
         System.out.println("A ingresado " + conteo + " numeros que son negativos");
 
+        // Cierre del objeto Scanner
+        entrada.close();
     }
 }
