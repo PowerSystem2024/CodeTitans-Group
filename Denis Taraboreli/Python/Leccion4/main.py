@@ -147,7 +147,7 @@ print('\n', cocina)  # Anulamos el end que agregaba los espacios anteriormente
 
 del cocina
 
-# Coleccion tipo set
+# Coleccion tipo set - conjuntos
 # set no tiene un orden y nos permite almacenar elementos duplicados, no se puede modificar pero si eliminar
 # no mantiene ningun indice, el orden es aleatorio
 # nos puede servir para evitar elementos duplicados en una lista de datos como
