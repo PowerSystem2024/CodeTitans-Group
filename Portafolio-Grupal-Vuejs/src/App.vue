@@ -1,13 +1,19 @@
 <script setup>
-const nameGroup = "CodeTitans"
-const descriptionGroup = "Somos el grupo CodeTitans estudiantes de la Tecnicatura en Programacion de la UTN-San Rafael Cohorte 2024."
+import NavBar from './components/NavBar.vue';
 </script>
 
 <template>
   <header>
-    <h1>{{ nameGroup }}</h1>
-    <p>{{ descriptionGroup }}</p>
+    <!--Barra de Navegacion-->
+        <NavBar />
   </header>
+  <main>
+        <section id="educacion"><h2>Educación - Cursos</h2></section>
+        <section id="experiencia"><h2>Experiencia</h2></section>
+        <section id="proyectos"><h2>Proyectos</h2></section>
+        <section id="habilidades"><h2>Habilidades</h2></section>
+        <section id="intereses"><h2>Intereses</h2></section>
+    </main>
 </template>
 
 <style scoped>
