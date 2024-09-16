@@ -11,7 +11,7 @@ package Java.Clase03.EjerciciosCiclos03;
 
 import javax.swing.JOptionPane;
 
-public class ejercicio03_2 {
+public class Ejercicio03_2 {
     public static void main(String[] args) {
         int numero, aleatorio, conteo = 0;
         aleatorio = (int) (Math.random() * 100); // Esto genera un numero aleatorio

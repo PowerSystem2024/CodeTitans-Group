@@ -9,7 +9,7 @@ package Java.Clase03.EjerciciosCiclos03;
 
 import java.util.Scanner;
 
-public class ejercicio02 {
+public class Ejercicio02 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int numero, conteo = 0;

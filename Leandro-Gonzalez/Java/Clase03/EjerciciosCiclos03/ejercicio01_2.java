@@ -9,7 +9,7 @@ package Java.Clase03.EjerciciosCiclos03;
 
 import javax.swing.JOptionPane;
 
-public class ejercicio01_2 {
+public class Ejercicio01_2 {
     public static void main(String[] args) {
         int numero;
 
