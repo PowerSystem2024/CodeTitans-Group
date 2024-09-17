@@ -9,10 +9,6 @@ let persona = {
   nombre: "Leandro",
   apellido: "Gonzalez",
   email: "leandev@test.com",
-  edad: 37,
-  nombreCompleto: function () {
-    return this.nombre + " " + this.apellido;
-  },
 };
 
 console.log(persona.nombre);
