@@ -5,6 +5,20 @@ public class Aritmetica {
     int a;
     int b;
 
+    // El constructor es un metodo especial
+    // En este constructor estamos "omitiendo valores"
+    public Aritmetica() { // Constructor numero 1 vacio
+        System.out.println("Se esta ejecutando este constructor numero uno");
+    }
+
+    // Estamos viendo lo que se llama sobrecarga de constructores
+    // En este constructor estamos "Asignando valosres"
+    public Aritmetica(int a, int b) { // Constructor numero 2
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando este constructor numero dos");
+    }
+
     // Metodo / "void" no devuelve nada
     public void sumarNumeros() {
         // Adentro esta el cuerpo de la clase

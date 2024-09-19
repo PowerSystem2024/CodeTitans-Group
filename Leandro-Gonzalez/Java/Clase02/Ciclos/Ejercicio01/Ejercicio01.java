@@ -1,5 +1,7 @@
-/*Ejercicio 1: Leer un numero y mostrar su cuadrado
-repetir el proceso hasta que se introduzca un numero negativo */
+/*
+Ejercicio 1: Leer un numero y mostrar su cuadrado
+repetir el proceso hasta que se introduzca un numero negativo
+ */
 
 package Java.Clase02.Ciclos.Ejercicio01;
 
