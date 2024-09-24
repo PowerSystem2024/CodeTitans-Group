@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>20</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: String
+-apellido: String
+--
+get nombre()
+set nombre(String)
+get apellido()
+set apellido()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>250</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+_departamento: String
+--
+get departamento()
+set departamento(String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>140</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>0</y><w>100</w><h>40</h></coordinates><panel_attributes>Clase "padre"
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>10</x><y>400</y><w>90</w><h>40</h></coordinates><panel_attributes>Clase "hija"
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>0</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;20;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>340</y><w>100</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;70</additional_attributes></element></diagram>
