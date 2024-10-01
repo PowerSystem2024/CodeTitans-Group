@@ -29,6 +29,17 @@ class Persona {
   set apellido(apellido) {
     this._apellido = apellido;
   }
+  //Creamos un metodo para obtener el nombre completo
+  nombreCompleto() {
+    return this._nombre + " " + this._apellido;
+  }
+
+  //Sobreescribimos el metodo toString de la clase padre Object
+  toString() {
+    //se aplica el polimorfismo (multiples formas en tiempo de ejecucion)
+    //el metodo que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
+    return this.nombreCompleto();
+  }
 }
 
 //Creamos la clase "hijo" de la clase Persona
@@ -44,6 +55,11 @@ class Empleado extends Persona {
 
   set departamento(departamento) {
     this._departamento = departamento;
+  }
+
+  //Sobreescribimos el metodo nombreCompleto de la clase Persona
+  nombreCompleto() {
+    return super.nombreCompleto() + ", " + this._departamento;
   }
 }
 
@@ -72,3 +88,9 @@ console.log(persona2.apellido); //Accedemos a la propiedad apellido del objeto p
 let empleado1 = new Empleado("Pedro", "Martinez", "Sistemas");
 console.log(empleado1); //Mostramos el objeto empleado1
 console.log(empleado1.nombre); //Accedemos a la propiedad nombre del objeto empleado1
+console.log(empleado1.nombreCompleto()); //Accedemos al metodo nombreCompleto del objeto empleado1
+
+//Object.prototype.toString Esta es la manera de acceder a atributos y metodos de manera dinamica
+
+console.log(empleado1.toString()); //Accedemos al metodo toString del objeto empleado1
+console.log(persona1.toString()); //Accedemos al metodo toString del objeto persona1
