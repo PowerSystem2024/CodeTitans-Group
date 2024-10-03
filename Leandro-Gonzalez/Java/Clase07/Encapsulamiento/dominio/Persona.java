@@ -38,4 +38,11 @@ public class Persona {
         this.eliminado = eliminado;
     }
 
+    // Método toString convierte en una cadena de texto la información de un objeto
+    public String toString() {
+        return "Persona [nombre: " + this.nombre +
+                ", sueldo: " + this.sueldo +
+                ", eliminado: " + this.eliminado + "]";
+    }
+
 }
