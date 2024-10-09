@@ -154,7 +154,8 @@ Analizar cambios en los archivos de tu proyecto Git parte 3
 
 Ingresamos de la siguiente manera:
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.</sub>
+Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+</sub>
 
 ```sh
 cd tecnicatura #Ingresamos al direcotorio donde están nuestras carpetas de trabajo
