@@ -151,8 +151,10 @@ Profesor Ariel Betancud</sub>
 
 <sub>
 Analizar cambios en los archivos de tu proyecto Git parte 3</sub>
+
 <sub>
 Ingresamos de la siguiente manera:</sub>
+
 <sub>
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 </sub>
@@ -1297,20 +1299,22 @@ Para invitar a un colaborador a tu proyecto en GitHub, sigue estos pasos:
 Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá participar en el proyecto haciendo commits.
 ```
 ## Clase 05 - Miércoles 11 de Septiembre del 2024
-
-### Git Tags y Versiones en GitHub
-
-**¿Qué son los Git Tags?**
+<sub>
+ Git Tags y Versiones en GitHub</sub>
+<sub>
+¿Qué son los Git Tags?</sub>
 <sub>
 Son etiquetas que se asignan a commits específicos en un repositorio Git. Estas etiquetas sirven como marcadores para identificar versiones importantes del proyecto, como releases, puntos de referencia o cualquier otro momento significativo.</sub> 
-
-**¿Por qué usar Git Tags?**
 <sub>
-* Facilitar la navegación: Permiten encontrar rápidamente un commit específico.
-* Gestionar versiones: Ayudan a rastrear los cambios a lo largo del tiempo.
-* Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.</sub> 
+¿Por qué usar Git Tags?</sub> 
+<sub>
 
-**Creación de Etiquetas en Git**
+<sub>
+Facilitar la navegación: Permiten encontrar rápidamente un commit específico.
+Gestionar versiones: Ayudan a rastrear los cambios a lo largo del tiempo.
+Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.</sub> 
+<sub>
+Creación de Etiquetas en Git</sub>
 <sub>
 Para crear una nueva etiqueta en el commit actual, utiliza el siguiente comando:
 </sub> 
