@@ -1257,21 +1257,16 @@ git branch -M main
 Ahora, cuando creamos un repositorio desde la nube (desde GitHub), la rama principal tendrá por defecto el nombre de main, y al clonarlo en nuestro ordenador seguirá teniendo este nombre. En este caso, no será necesario ningún cambio.
 ```
 
-# CLASE 04 - MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024
-<sub>
-Tu primer `push`</sub>
-<sub>
-La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**.</sub>
-<sub>
-Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.</sub>
-</sub>
-Pasos para configurar la llave SSH:</sub>
-<sub>
-1. Ir a la configuración de **SSH Keys** en GitHub.
-2. Crear una nueva llave con el nombre que desees.
-3. Pegar el contenido de la llave pública de tu computadora.</sub>
-<sub>
-Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:</sub>
+# CLASE 04 - MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024  
+
+Tu primer `push`. La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**. Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.  
+
+## Pasos para configurar la llave SSH:  
+1. Ir a la configuración de **SSH Keys** en GitHub.  
+2. Crear una nueva llave con el nombre que desees.  
+3. Pegar el contenido de la llave pública de tu computadora.  
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:  
 
 ```sh
 git remote set-url origin url-ssh-del-repositorio-en-github
@@ -1301,16 +1296,15 @@ Para invitar a un colaborador a tu proyecto en GitHub, sigue estos pasos:
 Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá participar en el proyecto haciendo commits.
 ```
 
-# CLASE 04 - MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024  
+# CLASE 05 - MIÉRCOLES 11 DE SEPTIEMBRE DEL 2024  
 
-Tu primer `push`. La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**. Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.  
+## Git Tag y Versiones en GitHub  
 
-## Pasos para configurar la llave SSH:  
-1. Ir a la configuración de **SSH Keys** en GitHub.  
-2. Crear una nueva llave con el nombre que desees.  
-3. Pegar el contenido de la llave pública de tu computadora.  
+En Git, las etiquetas o **Git tags** tienen un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando `git tag`, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas, es esencial para un flujo de trabajo eficiente.  
 
-Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:  
+## Creación de Etiquetas en Git  
+
+Para crear una etiqueta, puedes usar el siguiente comando:  
 
 ![alt text](image.png)
 
