@@ -1,4 +1,4 @@
-# CLASE MIÉRCOLES 27 DE MARZO DEL 2024
+## CLASE MIÉRCOLES 27 DE MARZO DEL 2024
 
 >Lo que vimos en la clase anterior:
 
@@ -87,7 +87,7 @@ rm vacio.txt #Borra el archivo seleccionado, ¡¡¡¡CUIDADO!!!!
 rm --help #Muestra como funciona el comando
 ```
 
-# CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
+## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
 
 ```sh
 cd tecnicatura
@@ -1055,33 +1055,33 @@ Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos c�
 <sub>
 Es recomendable iniciar sesión, osea registrarnos y guardar estos datos para que al cambiar un dispositivo sigamos teniendo acceso.
 </sub>
-# CLASE 01 MIÉRCOLES 14 DE AGOSTO DEL 2024
+## CLASE 01 MIÉRCOLES 14 DE AGOSTO DEL 2024
 
 ## USO DE GITHUB Parte 1
 <sub>
-GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).
+GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).</sub>
 <sub>
-Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear organizaciones y proyectos de trabajo, descubrir repositorios de otras personas, contribuir a esos proyectos, dar estrellas y muchas otras cosas.
-<sub>
+Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear organizaciones y proyectos de trabajo, descubrir repositorios de otras personas, contribuir a esos proyectos, dar estrellas y muchas otras cosas.</sub>
+</sub>
 ## COMANDOS
 
 **Import repository**, **New repository**, **New organization**: significa que es como tu empresa,  
 **New project**: significa es como un grupo de repositorios que puedes tener dentro de una empresa,  
 **New gist**: es un pedacito de código que puedes compartir.
 
-### New repository
+## New repository
 
 - **Ponemos el nombre**: `class-git`
 - **Descripción**: Haremos un blog increíble.
 - **Licencias**: Hay muchas licencias para publicar el código, pero **NO** lo hacemos ahora.
 
-### Create repository
+## Create repository
 <sub>
 - Lo ponemos en **privado** o en **público**.</sub>
 <sub>
 El `README.md` es el archivo que veremos por defecto al entrar a un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.</sub>
 
-### Clonar un repositorio
+## Clonar un repositorio
 <sub>
 Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando HTTPS) y ejecutar el comando:</sub>
 
@@ -1145,13 +1145,13 @@ Cómo crear un token:
 Aquí se puede colocar un nombre, la fecha de expiración, tildar en repo y luego hacer click en el botón verde Generate token.
 ```
 
-# CLASE 02 - MIÉRCOLES 21 DE AGOSTO DEL 2024
+## CLASE 02 - MIÉRCOLES 21 DE AGOSTO DEL 2024
 
 ## Cargar la llave SSH pública en GitHub
 <sub>
 Para copiar la llave pública, debes ir al archivo `.ssh` y allí encontrarás el archivo `.pub`. Lo puedes abrir con un editor de texto (como un `.txt`) y luego copiar el contenido que está dentro.</sub>
 
-### Pasos:
+## Pasos:
 <sub>
 1. Copiar la llave pública.
 2. Ir a GitHub, a **Settings** y luego a **SSH and GPG keys**.
