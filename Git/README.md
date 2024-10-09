@@ -1258,15 +1258,16 @@ Ahora, cuando creamos un repositorio desde la nube (desde GitHub), la rama princ
 ```
 
 # CLASE 04 - MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024  
-
-Tu primer `push`. La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**. Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.  
+<sub>
+Tu primer `push`. La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**. Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo. </sub> 
 
 ## Pasos para configurar la llave SSH:  
+<sub>
 1. Ir a la configuración de **SSH Keys** en GitHub.  
 2. Crear una nueva llave con el nombre que desees.  
-3. Pegar el contenido de la llave pública de tu computadora.  
-
-Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:  
+3. Pegar el contenido de la llave pública de tu computadora.  </sub> 
+<sub>
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:  </sub> 
 
 ```sh
 git remote set-url origin url-ssh-del-repositorio-en-github
@@ -1300,16 +1301,19 @@ Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá 
 ### Git Tags y Versiones en GitHub
 
 **¿Qué son los Git Tags?**
-Son etiquetas que se asignan a commits específicos en un repositorio Git. Estas etiquetas sirven como marcadores para identificar versiones importantes del proyecto, como releases, puntos de referencia o cualquier otro momento significativo.
+<sub>
+Son etiquetas que se asignan a commits específicos en un repositorio Git. Estas etiquetas sirven como marcadores para identificar versiones importantes del proyecto, como releases, puntos de referencia o cualquier otro momento significativo.</sub> 
 
 **¿Por qué usar Git Tags?**
+<sub>
 * Facilitar la navegación: Permiten encontrar rápidamente un commit específico.
 * Gestionar versiones: Ayudan a rastrear los cambios a lo largo del tiempo.
-* Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.
+* Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.</sub> 
 
 **Creación de Etiquetas en Git**
+<sub>
 Para crear una nueva etiqueta en el commit actual, utiliza el siguiente comando:
-
+</sub> 
 
 ![alt text](image.png)
 
