@@ -470,24 +470,25 @@ git rm --force: Elimina los archivos de Git y del disco duro. Git guarda todo, p
 ```
 <sub>
 ¿Cuál es la diferencia entre git rm y git reset Head?</sub>
-
-La diferencia principal entre git rm y git reset HEAD radica en que git rm elimina archivos del repositorio y de la historia del proyecto, mientras que git reset saca los cambios del área de preparación y los mueve del espacio de trabajo, sin afectar la historia del repositorio.
-
-Es importante tener en cuenta el efecto que cada comando tiene en el proyecto y usarlos según tus necesidades y objetivos específicos.
-
-¿Cuándo utilizar git reset en lugar de git revert? 
-
+<sub>
+La diferencia principal entre git rm y git reset HEAD radica en que git rm elimina archivos del repositorio y de la historia del proyecto, mientras que git reset saca los cambios del área de preparación y los mueve del espacio de trabajo, sin afectar la historia del repositorio.</sub>
+<sub>
+Es importante tener en cuenta el efecto que cada comando tiene en el proyecto y usarlos según tus necesidades y objetivos específicos.</sub>
+<sub>
+¿Cuándo utilizar git reset en lugar de git revert? </sub>
+<sub>
 Para reescribir la historia del repositorio y eliminar confirmaciones anteriores, se utiliza git reset. Para deshacer cambios de confirmaciones anteriores de forma segura sin modificar la historia del repositorio, se emplea git revert.
-
-
-Resumen Para evitar problemas en el trabajo, es valioso entender las implicaciones y riesgos de cada comando y elegir el enfoque adecuado según las necesidades y el flujo de trabajo del proyecto.
-
-Con git rm eliminamos un archivo de Git, pero mantenemos su historial de cambios. Si no queremos borrar un archivo, sino dejarlo como está y actualizarlo después, no debemos usar este comando en este commit.
-
-Empleando git reset HEAD, movemos los cambios de Staging a Unstaged, pero mantenemos el archivo en el repositorio con los últimos cambios en los que hicimos commit. Así, no perdemos nada relevante.
-
+</sub>
+<sub>
+Resumen Para evitar problemas en el trabajo, es valioso entender las implicaciones y riesgos de cada comando y elegir el enfoque adecuado según las necesidades y el flujo de trabajo del proyecto.</sub>
+<sub>
+Con git rm eliminamos un archivo de Git, pero mantenemos su historial de cambios. Si no queremos borrar un archivo, sino dejarlo como está y actualizarlo después, no debemos usar este comando en este commit.</sub>
+<sub>
+Empleando git reset HEAD, movemos los cambios de Staging a Unstaged, pero mantenemos el archivo en el repositorio con los últimos cambios en los que hicimos commit. Así, no perdemos nada relevante.</sub>
+<sub>
 Siguientes pasos Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo de Staging para poder hacer commit de todos los demás.
-
+</sub>
+<sub>
 Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir probando los nuevos comandos, al finalizar las pruebas, eliminar el directorio con todo su contenido.</sub>
 
 ## CLASE 7 MIÉRCOLES 22 DE MAYO DEL 2024
@@ -495,16 +496,16 @@ Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir 
 <sub>Flujo de trabajo básico con un repositorio remoto parte 8</sub>
 
 <sub>
-Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.
+Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.</sub>
+<sub>
+Para solucionar esto, utilizamos los servidores remotos: un nuevo estado que deben seguir nuestros archivos para conectarse y trabajar con equipos de cualquier parte del mundo.</sub>
+<sub>
+Estos servidores remotos pueden estar alojados en GitHub, GitLab, BitBucket, entre otros. Lo que van a hacer es guardar el mismo repositorio que tienes en tu computadora y darnos una URL con la que todos podremos acceder a los archivos del proyecto. Así, el equipo podrá descargarlos, hacer cambios y volverlos a enviar al servidor remoto para que otras personas vean los cambios, comparen sus versiones y creen nuevas propuestas para el proyecto.</sub>
+<sub>
+Esto significa que debes aprender algunos nuevos comandos</sub>
 
-Para solucionar esto, utilizamos los servidores remotos: un nuevo estado que deben seguir nuestros archivos para conectarse y trabajar con equipos de cualquier parte del mundo.
-
-Estos servidores remotos pueden estar alojados en GitHub, GitLab, BitBucket, entre otros. Lo que van a hacer es guardar el mismo repositorio que tienes en tu computadora y darnos una URL con la que todos podremos acceder a los archivos del proyecto. Así, el equipo podrá descargarlos, hacer cambios y volverlos a enviar al servidor remoto para que otras personas vean los cambios, comparen sus versiones y creen nuevas propuestas para el proyecto.
-
-Esto significa que debes aprender algunos nuevos comandos
-
-
-Comandos para trabajo remoto con GIT</sub>
+<sub>
+Comandos para trabajo remoto con GIT</sub></sub>
 
 ```sh
 git clone url_del_servidor_remoto #Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git
@@ -556,18 +557,19 @@ git log > log.txt #guardar los logs en un archivo txt
 
 ## CLASE 8 MIÉRCOLES 29 DE MAYO DEL 2024
 <sub>
-Introducción a las ramas o branches de Git parte 9
+Introducción a las ramas o branches de Git parte 9</sub>
+<sub>
+Cuando entramos en el proyecto veremos que nos encontramos con la rama master, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la master</sub>
 
-Cuando entramos en el proyecto veremos que nos encontramos con la rama master, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la master
-
-
-Las ramas (branches) son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
-
-La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).
-
-Repasa: ¿Qué es Git?
-
-Cómo funcionan las ramas en GIT
+<sub>
+Las ramas (branches) son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.</sub>
+<sub>
+La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).</sub>
+<sub>
+Repasa: ¿Qué es Git?</sub>
+<sub>
+Cómo funcionan las ramas en GIT<sub>
+<sub>
 Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 </sub>
 
@@ -686,23 +688,23 @@ git checkout segunda #Volvemos a ver todos los cambios que hicimos de nuevo
 ```
 ## CLASE 10 MIÉRCOLES 5 DE JUNIO DEL 2024 - Portafolio 4
 <sub>
-Fusión de ramas con Git merge parte 10
+Fusión de ramas con Git merge parte 10</sub>
+<sub>
+La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.</sub>
+<sub>
+Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.</sub>
 
-La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
-
-Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
-
-
-Funcionamiento de Git merge
-
-Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
-
-¿Cómo unir dos ramas en git?
-
-Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
-
-¿Cómo realizar un merge en git?
-
+<sub>
+Funcionamiento de Git merge</sub>
+<sub>
+Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.</sub>
+<sub>
+¿Cómo unir dos ramas en git?</sub>
+<sub>
+Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.</sub>
+<sub>
+¿Cómo realizar un merge en git?</sub>
+<sub>
 Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
 </sub>
 
@@ -713,12 +715,12 @@ git merge segunda
 ```
 
 <sub>
-Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como git fetch, git push y git pull, para mantener actualizado tu repositorio.
-
-En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los cambios de una rama llamada segunda: Otra opción es crear un nuevo commit en la rama segunda combinando los cambios de cualquier otra rama:
-
-Git es asombroso porque puede saber cuáles cambios deben conservarse en una rama y cuáles no. En casos de conflictos, asegúrate de guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo.
-
+Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como git fetch, git push y git pull, para mantener actualizado tu repositorio.</sub>
+<sub>
+En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los cambios de una rama llamada segunda: Otra opción es crear un nuevo commit en la rama segunda combinando los cambios de cualquier otra rama:</sub>
+<sub>
+Git es asombroso porque puede saber cuáles cambios deben conservarse en una rama y cuáles no. En casos de conflictos, asegúrate de guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo.</sub>
+<sub>
 Comandos básicos de GitHub:
 </sub>
 
@@ -820,20 +822,20 @@ git merge segunda #y terminamos con esto
 
 ## CLASE 11 MIÉRCOLES 12 DE JUNIO DEL 2024 - Portafolio 5
 <sub>
-Resolución de conflictos al hacer merge parte 11
-
-Sección lectura
-
-Git nunca borra nada, a menos que nosotros se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama o creando un nuevo commit, no borrando ramas ni commits (recuerda que puedes borrar commits con git reset y ramas con git branch -d).
-
-Git es muy inteligente y puede resolver algunos conflictos automáticamente: cambios, nuevas líneas, entre otros. Pero algunas veces no sabe cómo resolver estas diferencias, por ejemplo, cuando dos ramas diferentes hacen cambios distintos a una misma línea.
-
-Esto lo conocemos como conflicto y lo podemos resolver manualmente. Solo debemos hacer el merge, ir a nuestro editor de código y elegir si queremos quedarnos con alguna de estas dos versiones o algo diferente. Algunos editores de código como Visual Studio Code nos ayudan a resolver estos conflictos sin necesidad de borrar o escribir líneas de texto, basta con hacer clic en un botón y guardar el archivo.
-
-Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del merge. Si Git puede resolver el conflicto, hará commit automáticamente. Pero, en caso de no pueda resolverlo, debemos solucionarlo y hacer el commit.
-
-Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged. Solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
-
+Resolución de conflictos al hacer merge parte 11</sub>
+<sub>
+Sección lectura</sub>
+<sub>
+Git nunca borra nada, a menos que nosotros se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama o creando un nuevo commit, no borrando ramas ni commits (recuerda que puedes borrar commits con git reset y ramas con git branch -d).</sub>
+<sub>
+Git es muy inteligente y puede resolver algunos conflictos automáticamente: cambios, nuevas líneas, entre otros. Pero algunas veces no sabe cómo resolver estas diferencias, por ejemplo, cuando dos ramas diferentes hacen cambios distintos a una misma línea.</sub>
+<sub>
+Esto lo conocemos como conflicto y lo podemos resolver manualmente. Solo debemos hacer el merge, ir a nuestro editor de código y elegir si queremos quedarnos con alguna de estas dos versiones o algo diferente. Algunos editores de código como Visual Studio Code nos ayudan a resolver estos conflictos sin necesidad de borrar o escribir líneas de texto, basta con hacer clic en un botón y guardar el archivo.</sub>
+<sub>
+Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del merge. Si Git puede resolver el conflicto, hará commit automáticamente. Pero, en caso de no pueda resolverlo, debemos solucionarlo y hacer el commit.</sub>
+<sub>
+Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged. Solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.</sub>
+<sub>
 Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
 </sub>
 
@@ -841,30 +843,30 @@ Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, de
 git merge --abort
 ```
 <sub>
-Conflictos en repositorios remotos Al trabajar con otras personas, es necesario utilizar un repositorio remoto.
-­
--Para copiar el repositorio remoto al directorio de trabajo local, se utiliza el comando git clone , y para enviar cambios al repositorio remoto se utiliza git push.
-
--Para actualizar el repositorio local se hace uso del comando git fetch, luego se debe fusionar los datos traídos con los locales usando git merge.
-
-Para traer los datos y fusionarlos a la vez, en un solo comando, se usa git pull.
-
-­- Para crear commits rápidamente, fusionando git add y git commit -m "", usamos git commit -am "".
-
-­- Para generar nuevas ramas, hay que posicionarse sobre la rama que se desea copiar y utilizar el comando git branch .
-
-Para saltar entre ramas, se usa el comando git checkout
-
-­- Una vez realizado los cambios en la rama, estas deben fusionarse con git merge.
-
-El merge ocurre en la rama en la que se está posicionado. Por lo tanto, la rama a fusionar se transforma en la principal.
-
-Los merges también son commits.
-
-Los merges pueden generar conflictos, esto aborta la acción y pide que soluciones el problema manualmente, aceptando o rechazando los cambios que vienen.
-
-Repasa qué es un branch
-
+Conflictos en repositorios remotos Al trabajar con otras personas, es necesario utilizar un repositorio remoto.</sub>
+­<sub>
+-Para copiar el repositorio remoto al directorio de trabajo local, se utiliza el comando git clone , y para enviar cambios al repositorio remoto se utiliza git push.</sub>
+<sub>
+-Para actualizar el repositorio local se hace uso del comando git fetch, luego se debe fusionar los datos traídos con los locales usando git merge.</sub>
+<sub>
+Para traer los datos y fusionarlos a la vez, en un solo comando, se usa git pull.</sub>
+<sub>
+­- Para crear commits rápidamente, fusionando git add y git commit -m "", usamos git commit -am "".</sub>
+<sub>
+­- Para generar nuevas ramas, hay que posicionarse sobre la rama que se desea copiar y utilizar el comando git branch .</sub>
+<sub>
+Para saltar entre ramas, se usa el comando git checkout</sub>
+<sub>
+­- Una vez realizado los cambios en la rama, estas deben fusionarse con git merge.</sub>
+<sub>
+El merge ocurre en la rama en la que se está posicionado. Por lo tanto, la rama a fusionar se transforma en la principal.</sub>
+<sub>
+Los merges también son commits.</sub>
+<sub>
+Los merges pueden generar conflictos, esto aborta la acción y pide que soluciones el problema manualmente, aceptando o rechazando los cambios que vienen.</sub>
+<sub>
+Repasa qué es un branch</sub>
+<sub>
 Sección Práctica
 </sub>
 
@@ -876,12 +878,14 @@ git merge master #traemos los cambios desde la master y tenemos las dos ramas ac
 ```
 
 <sub>
-Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando archivos html y css estando en la rama segunda, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.
+Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando archivos html y css estando en la rama segunda, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.</sub>
 
 
-Abrimos el html y modificamos estando en la rama segunda
+<sub>
+Abrimos el html y modificamos estando en la rama segunda</sub>
 
 
+<sub>
 Luego commiteamos en la rama segunda y pasamos a la rama master, guardar y commitear, hacer un merge estando en master: pongo en orden los comandos abajo.
 </sub>
 
@@ -901,9 +905,10 @@ git merge segunda #Hacemos un merge estando en master y veremos el conflicto
 ```
 
 <sub>
-Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el css y en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.
+Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el css y en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.</sub>
 
 
+<sub>
 Debemos ahora commitear estos cambios, abajo pongo los comandos.
 </sub>
 
@@ -921,49 +926,49 @@ git merge master #Ahora pasamos los cambios a la rama segunda.
 ## CLASE 12 MIÉRCOLES 19 DE JUNIO DEL 2024 - Portafolio 6
 
 <sub>
-Cómo funcionan las llaves públicas y privadas parte 12
-
-Sección lectura
-
-Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje.
-
-Las llaves públicas y privadas nos ayudan a cifrar y descifrar nuestros archivos de forma que los podamos compartir sin correr el riesgo de que sean interceptados por personas con malas intenciones.
-
-Cómo funciona un mensaje cifrado con llaves públicas y privadas Ambas personas deben crear su llave pública y privada.
-
-Ambas personas pueden compartir su llave pública a las otras partes (recuerda que esta llave es pública, no hay problema si la “interceptan”).
-
-La persona que quiere compartir un mensaje puede usar la llave pública de la otra persona para cifrar los archivos y asegurarse que solo puedan ser descifrados con la llave privada de la persona con la que queremos compartir el mensaje.
-
-El mensaje está cifrado y puede ser enviado a la otra persona sin problemas en caso de que los archivos sean interceptados.
-
-La persona a la que enviamos el mensaje cifrado puede emplear su llave privada para descifrar el mensaje y ver los archivos.
-
+Cómo funcionan las llaves públicas y privadas parte 12</sub>
+<sub>
+Sección lectura</sub>
+<sub>
+Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje.</sub>
+<sub>
+Las llaves públicas y privadas nos ayudan a cifrar y descifrar nuestros archivos de forma que los podamos compartir sin correr el riesgo de que sean interceptados por personas con malas intenciones.</sub>
+<sub>
+Cómo funciona un mensaje cifrado con llaves públicas y privadas Ambas personas deben crear su llave pública y privada.</sub>
+<sub>
+Ambas personas pueden compartir su llave pública a las otras partes (recuerda que esta llave es pública, no hay problema si la “interceptan”).</sub>
+<sub>
+La persona que quiere compartir un mensaje puede usar la llave pública de la otra persona para cifrar los archivos y asegurarse que solo puedan ser descifrados con la llave privada de la persona con la que queremos compartir el mensaje.</sub>
+<sub>
+El mensaje está cifrado y puede ser enviado a la otra persona sin problemas en caso de que los archivos sean interceptados.</sub>
+<sub>
+La persona a la que enviamos el mensaje cifrado puede emplear su llave privada para descifrar el mensaje y ver los archivos.</sub>
+<sub>
 Nota: puedes compartir tu llave pública, pero nunca tu llave privada.</sub>
 
 ## CLASE 13 MIÉRCOLES 26 DE JUNIO DEL 2024 - Portafolio 7
 
 <sub>
-Configura tus llaves SSH en local parte 13
+Configura tus llaves SSH en local parte 13</sub>
 
+<sub>
+Si usamos GitHub solo con usuario y contraseña, si un día perdemos nuestra PC, perdemos todo, nuestras contraseñas y los proyectos de nuestros clientes están todos en riesgo. Esta es la forma en que muchos sitios web son jackeados, para evitar esto tenemos que agregar una capa de seguridad mucho más fuerte. Es aquí donde podemos comenzar a crear el entorno con llaves publicas y privadas. Esto tiene una ventaja, no solo es que nuestra seguridad será más fuerte, si no que ya no tendrás que poner nunca más tu usuario y contraseña.</sub>
 
-Si usamos GitHub solo con usuario y contraseña, si un día perdemos nuestra PC, perdemos todo, nuestras contraseñas y los proyectos de nuestros clientes están todos en riesgo. Esta es la forma en que muchos sitios web son jackeados, para evitar esto tenemos que agregar una capa de seguridad mucho más fuerte. Es aquí donde podemos comenzar a crear el entorno con llaves publicas y privadas. Esto tiene una ventaja, no solo es que nuestra seguridad será más fuerte, si no que ya no tendrás que poner nunca más tu usuario y contraseña.
+<sub>
+En nuestra maquina, debemos crear una llave privada y otra pública, una vez creada la llave pública se la enviamos a GitHub en nuestro repositorio, y le decimos: para este repositorio quiero que uses esta llave pública, de mi llave privada en mi PC, todo esto lo conectamos por un protocolo nuevo, en vez de conectarnos al repositorio por HTTPS, vamos a conectarnos por un protocolo que se llama SSH.</sub>
 
+<sub>
+En la primera conección GitHub se va a dar cuenta que le mandaste una llave publica que esta relacionada con tu llave privada y nos va a enviar cifrada con nuestra llave pública su propia llave pública de GitHub, porque GitHub también tiene una llave privada, todo esto sucederá automaticamente, a la llave privada que nosotros tenemos, se le puede hacer una contraseña encima, para añadir más seguridad para hacerla mas fuerte y más poderosa.</sub>
 
-En nuestra maquina, debemos crear una llave privada y otra pública, una vez creada la llave pública se la enviamos a GitHub en nuestro repositorio, y le decimos: para este repositorio quiero que uses esta llave pública, de mi llave privada en mi PC, todo esto lo conectamos por un protocolo nuevo, en vez de conectarnos al repositorio por HTTPS, vamos a conectarnos por un protocolo que se llama SSH.
-
-
-En la primera conección GitHub se va a dar cuenta que le mandaste una llave publica que esta relacionada con tu llave privada y nos va a enviar cifrada con nuestra llave pública su propia llave pública de GitHub, porque GitHub también tiene una llave privada, todo esto sucederá automaticamente, a la llave privada que nosotros tenemos, se le puede hacer una contraseña encima, para añadir más seguridad para hacerla mas fuerte y más poderosa.
-
-
-Las llaves SSH no son por repositorio o por proyecto, si no que es por persona, ahora vamos a crear unas llaves exclusivamente para nosotros.
-
-En este ejemplo, aprenderemos cómo configurar nuestras llaves SSH en local.
-
-Comandos:
-
-abrir git bash #Esto en window
-
+<sub>
+Las llaves SSH no son por repositorio o por proyecto, si no que es por persona, ahora vamos a crear unas llaves exclusivamente para nosotros.</sub>
+<sub>
+En este ejemplo, aprenderemos cómo configurar nuestras llaves SSH en local.</sub>
+<sub>
+Comandos:</sub>
+<sub>
+abrir git bash #Esto en window</sub>
+<sub>
 abrir terminal #En ubuntu, y nos quedamos sin entrar a ningun proyecto o carpeta.
 </sub>
 
@@ -1026,8 +1031,8 @@ ssh-add -K ruta-donde-guardaste-tu-llave-privada
 ```
 
 <sub>
-Por último les quiero hablar del 2FA: Segundo Factor de Autenticación. Este se puede hacer con varios dispositivos, y deberías hacerlo, ante el robo o perdida de un celular o ordenador, deberías tener un respaldo ante esto, este 2FA se puede hacer con diferentes generadores de códigos  de seguridad.
-
+Por último les quiero hablar del 2FA: Segundo Factor de Autenticación. Este se puede hacer con varios dispositivos, y deberías hacerlo, ante el robo o perdida de un celular o ordenador, deberías tener un respaldo ante esto, este 2FA se puede hacer con diferentes generadores de códigos  de seguridad.</sub>
+<sub>
 Para añadir un 2FA:
 </sub>
 
@@ -1046,18 +1051,18 @@ Esto quiere decir que también se utiliza la app de GitHub donde al iniciar sesi
 ```
 
 <sub>
-Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos códigos numéricos para la autenticación, yo recomiendo la aplicación: Twilio Authy Authenticator
-
+Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos códigos numéricos para la autenticación, yo recomiendo la aplicación: Twilio Authy Authenticator</sub>
+<sub>
 Es recomendable iniciar sesión, osea registrarnos y guardar estos datos para que al cambiar un dispositivo sigamos teniendo acceso.
 </sub>
 # CLASE 01 MIÉRCOLES 14 DE AGOSTO DEL 2024
 
 ## USO DE GITHUB Parte 1
-
+<sub>
 GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).
-
+<sub>
 Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear organizaciones y proyectos de trabajo, descubrir repositorios de otras personas, contribuir a esos proyectos, dar estrellas y muchas otras cosas.
-
+<sub>
 ## COMANDOS
 
 **Import repository**, **New repository**, **New organization**: significa que es como tu empresa,  
@@ -1071,14 +1076,14 @@ Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear orga
 - **Licencias**: Hay muchas licencias para publicar el código, pero **NO** lo hacemos ahora.
 
 ### Create repository
-
-- Lo ponemos en **privado** o en **público**.
-
-El `README.md` es el archivo que veremos por defecto al entrar a un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.
+<sub>
+- Lo ponemos en **privado** o en **público**.</sub>
+<sub>
+El `README.md` es el archivo que veremos por defecto al entrar a un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.</sub>
 
 ### Clonar un repositorio
-
-Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando HTTPS) y ejecutar el comando:
+<sub>
+Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando HTTPS) y ejecutar el comando:</sub>
 
 ```bash
 git clone URL
@@ -1143,18 +1148,18 @@ Aquí se puede colocar un nombre, la fecha de expiración, tildar en repo y lueg
 # CLASE 02 - MIÉRCOLES 21 DE AGOSTO DEL 2024
 
 ## Cargar la llave SSH pública en GitHub
-
-Para copiar la llave pública, debes ir al archivo `.ssh` y allí encontrarás el archivo `.pub`. Lo puedes abrir con un editor de texto (como un `.txt`) y luego copiar el contenido que está dentro.
+<sub>
+Para copiar la llave pública, debes ir al archivo `.ssh` y allí encontrarás el archivo `.pub`. Lo puedes abrir con un editor de texto (como un `.txt`) y luego copiar el contenido que está dentro.</sub>
 
 ### Pasos:
-
+<sub>
 1. Copiar la llave pública.
 2. Ir a GitHub, a **Settings** y luego a **SSH and GPG keys**.
 3. Crear una nueva llave SSH:
    - Hacer click en **New SSH key**.
    - Poner un nombre y pegar la llave SSH pública.
    - Con esto estará listo.
-
+</sub>
 > **Recomendación**: Es aconsejable que la llave SSH tenga el nombre del ordenador en el que estás trabajando. Este proceso se debe hacer con cada nueva PC o dispositivo que utilices para acceder a tu cuenta de GitHub.
 
 ---
