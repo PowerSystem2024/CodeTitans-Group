@@ -1215,39 +1215,40 @@ Para copiar la llave pública, debes ir al archivo `.ssh` y allí encontrarás e
   ```
 
 ---
-
-## Notas sobre el cambio de nombre de la rama `master` a `main`:
-
-Frente al cambio de nombre de la rama `master` a `main`, puede suceder que en el repositorio de GitHub se creen dos ramas: la rama `master` y la rama `main`. Para solucionarlo:
-
+<sub>
+Notas sobre el cambio de nombre de la rama `master` a `main`:</sub>
+<sub>
+Frente al cambio de nombre de la rama `master` a `main`, puede suceder que en el repositorio de GitHub se creen dos ramas: la rama `master` y la rama `main`. Para solucionarlo:</sub>
+<sub>
 1. Ir al repositorio en GitHub.
 2. Ir a **Settings**.
 3. Cambiar la rama principal de `master` a `main`.
 4. Después de esto, ya se puede borrar la rama `master`.
-
-# CLASE 03 - MIÉRCOLES 28 DE AGOSTO DEL 2024
-
-## Cambios en GitHub: de `master` a `main`
-
-El escritor argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. **Feo** no es lo mismo que **desagradable**, ni **aromático** es lo mismo que **oloroso**.
-
+</sub>
+## CLASE 03 - MIÉRCOLES 28 DE AGOSTO DEL 2024
+<sub>
+Cambios en GitHub: de `master` a `main`</sub>
+<sub>
+El escritor argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. **Feo** no es lo mismo que **desagradable**, ni **aromático** es lo mismo que **oloroso**.</sub>
+<sub>
 Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.
-
+</sub>
 > **Sí**, esta lectura es parte de la enseñanza profesional de **Git & GitHub**.
-
-Desde el 1 de octubre de 2020, GitHub cambió el nombre de la rama principal: ya no es `master` —como aprenderás aquí— sino `main`.
-
+<sub>
+Desde el 1 de octubre de 2020, GitHub cambió el nombre de la rama principal: ya no es `master` —como aprenderás aquí— sino `main`.</sub>
+<sub>
 Este cambio surgió a raíz de una reflexión profunda, provocada por el movimiento **#BlackLivesMatter**.  
-La industria de la tecnología lleva muchos años utilizando términos como **master**, **slave**, **blacklist** o **whitelist**, y se espera que pronto estos términos puedan desaparecer.
+La industria de la tecnología lleva muchos años utilizando términos como **master**, **slave**, **blacklist** o **whitelist**, y se espera que pronto estos términos puedan desaparecer.</sub>
 
 > **Y sí, las palabras importan.**
-
-Por lo tanto, de aquí en adelante, cada vez que me escuches mencionar “master”, debes saber que hago referencia a “main”.
-
-### ¿Cuándo sigue siendo `master` y cuándo es `main`?
-
-Cuando se crea un repositorio desde Git Bash en nuestro ordenador usando `git init`, sigue siendo el estándar como `master`.  
-¿Qué hacer con esto? Debes cambiar el nombre de la rama `master` a `main` con el siguiente comando:
+<sub>
+Por lo tanto, de aquí en adelante, cada vez que me escuches mencionar “master”, debes saber que hago referencia a “main”.</sub>
+<sub>
+¿Cuándo sigue siendo `master` y cuándo es `main`?</sub>
+<sub>
+Cuando se crea un repositorio desde Git Bash en nuestro ordenador usando `git init`, sigue siendo el estándar como `master`. </sub>
+<sub>
+¿Qué hacer con esto? Debes cambiar el nombre de la rama `master` a `main` con el siguiente comando:</sub>
 
 ```bash
 git branch -M main
@@ -1256,20 +1257,20 @@ Ahora, cuando creamos un repositorio desde la nube (desde GitHub), la rama princ
 ```
 
 # CLASE 04 - MIÉRCOLES 4 DE SEPTIEMBRE DEL 2024
-
-## Tu primer `push`
-
-La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**.
-
-Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
-
-### Pasos para configurar la llave SSH:
-
+<sub>
+Tu primer `push`</sub>
+<sub>
+La creación de las llaves **SSH** es necesaria solo una vez por cada computadora. Aquí aprenderás cómo conectarte a GitHub usando **SSH**.</sub>
+<sub>
+Luego de crear nuestras llaves **SSH**, podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.</sub>
+</sub>
+Pasos para configurar la llave SSH:</sub>
+<sub>
 1. Ir a la configuración de **SSH Keys** en GitHub.
 2. Crear una nueva llave con el nombre que desees.
-3. Pegar el contenido de la llave pública de tu computadora.
-
-Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:
+3. Pegar el contenido de la llave pública de tu computadora.</sub>
+<sub>
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, pero en lugar de usar **HTTPS**, vamos a usar la URL con **SSH**:</sub>
 
 ```bash
 git remote set-url origin url-ssh-del-repositorio-en-github
@@ -1299,17 +1300,17 @@ Para invitar a un colaborador a tu proyecto en GitHub, sigue estos pasos:
 Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá participar en el proyecto haciendo commits.
 ```
 
-# CLASE 05 - MIÉRCOLES 11 DE SEPTIEMBRE DEL 2024
-
-## Git tags y versiones en GitHub
-
-En Git, las **etiquetas** o **Git tags** juegan un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando `git tag`, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas es esencial para un flujo de trabajo eficiente.
+## CLASE 05 - MIÉRCOLES 11 DE SEPTIEMBRE DEL 2024
+<sub>
+Git tags y versiones en GitHub</sub>
+<sub>
+En Git, las **etiquetas** o **Git tags** juegan un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando `git tag`, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas es esencial para un flujo de trabajo eficiente.</sub>
 
 ---
-
-### Creación de etiquetas en Git
-
-Para crear una etiqueta, utiliza el siguiente comando:
+<sub>
+Creación de etiquetas en Git</sub>
+<sub>
+Para crear una etiqueta, utiliza el siguiente comando:</sub>
 
 ![alt text](image.png)
 
