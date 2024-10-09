@@ -1295,8 +1295,7 @@ Para invitar a un colaborador a tu proyecto en GitHub, sigue estos pasos:
 
 Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá participar en el proyecto haciendo commits.
 ```
-
-## CLASE 05 - MIÉRCOLES 11 DE SEPTIEMBRE DEL 2024
+## Clase 05 - Miércoles 11 de Septiembre del 2024
 
 ### Git Tags y Versiones en GitHub
 
@@ -1304,12 +1303,13 @@ Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá 
 Son etiquetas que se asignan a commits específicos en un repositorio Git. Estas etiquetas sirven como marcadores para identificar versiones importantes del proyecto, como releases, puntos de referencia o cualquier otro momento significativo.
 
 **¿Por qué usar Git Tags?**
-* **Facilitar la navegación:** Permiten encontrar rápidamente un commit específico.
-* **Gestionar versiones:** Ayudan a rastrear los cambios a lo largo del tiempo.
-* **Identificar releases:** Señalizan las versiones del proyecto que se lanzan al público.
+* Facilitar la navegación: Permiten encontrar rápidamente un commit específico.
+* Gestionar versiones: Ayudan a rastrear los cambios a lo largo del tiempo.
+* Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.
 
 **Creación de Etiquetas en Git**
 Para crear una nueva etiqueta en el commit actual, utiliza el siguiente comando:
+
 
 ![alt text](image.png)
 
