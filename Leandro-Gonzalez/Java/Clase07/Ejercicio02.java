@@ -5,7 +5,7 @@
 
 package Java.Clase07;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
