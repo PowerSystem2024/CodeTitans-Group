@@ -1,0 +1,37 @@
+
+@startuml
+class Persona {
+    - nombre: String
+    - genero: char
+    - edad: int
+    - direccion: String
+    + getNombre(): String
+    + setNombre(String): void
+    + getGenero(): char
+    + setGenero(char): void
+    + getEdad(): int
+    + setEdad(int): void
+    + getDireccion(): String
+    + setDireccion(String): void
+}
+
+class Empleado {
+    - idEmpleado: int
+    - sueldo: double
+    + getIdEmpleado(): int
+    + setSueldo(): double
+    + getSueldo(double): void
+}
+
+class Cliente {
+    - idCliente: int
+    - fechaRegistro: Date
+    - vip: boolean
+    + getIdCliente(): int
+    + getFechaRegistro(): Date
+}
+
+Empleado --|> Persona
+Cliente --|> Persona
+
+@enduml

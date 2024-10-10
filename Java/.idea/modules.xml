@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Clase02/Clase02.iml" filepath="$PROJECT_DIR$/Clase02/Clase02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase03/Clase03.iml" filepath="$PROJECT_DIR$/Clase03/Clase03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase05/Clase05.iml" filepath="$PROJECT_DIR$/Clase05/Clase05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeTitans-Group.iml" filepath="$PROJECT_DIR$/CodeTitans-Group.iml" />
+    </modules>
+  </component>
+</project>
