@@ -56,7 +56,8 @@ ul {
 #timeline {
   width: 100%;
   height: 1120px;
-  background-color: #222223;
+  background-color: rgb(26, 26, 26);
+  filter: drop-shadow(1px 1px 5px rgb(66, 184, 131));
   padding: 20px 1%;
   overflow: hidden
 }
@@ -152,6 +153,7 @@ ul {
   text-transform: capitalize;
   line-height: 150%;
   font-size: 80%;
+  background-color: #222223;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 22px
@@ -434,8 +436,4 @@ ul {
     left: calc(100%/2 - 40px)
   }
 }
-
-/*-------------------------------------
-         #End Timeline Rules
--------------------------------------*/
 </style>

@@ -34,20 +34,20 @@ const experiencia = ref([
 .card {
     display: flex;
     flex-direction: column;
-    background-color: rgb(28, 41, 52);
+    background-color: rgb(66, 184, 131);
     padding: 1rem;
     border-radius: 10px;
     margin: 1rem;
 }
 
 .titulo {
-    color: coral;
+    color: rgb(26, 26, 26);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .fecha {
-    color: burlywood;
+    color: rgb(26, 26, 26);
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -62,7 +62,7 @@ const experiencia = ref([
 .item {
     align-items: center;
     display: flex;
-    background-color: #fff;
+    background-color: rgb(26, 26, 26);
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -84,13 +84,13 @@ h3 {
 }
 
 p {
-    color: #333;
+    color: azure;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
 time {
-    color: #333;
+    color: azure;
     font-size: 0.8rem;
 }
 </style>

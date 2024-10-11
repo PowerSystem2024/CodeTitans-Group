@@ -22,14 +22,15 @@ const navegacion = ref([
 
 <style scoped>
 .navbar {
-    background-color: var(--vt-c-indigo);
-    color: #fff;
+    background-color: rgb(66, 184, 131);
+    color: rgb(26, 26, 26);
     padding: 0.5rem 1rem;
     align-items: center;
+    border-radius: 10px;
 }
 
 .navbar-item {
-    color: #fff;
+    color: rgb(26, 26, 26);
     text-decoration: none;
     margin-right: 1rem;
 }
@@ -44,8 +45,9 @@ const navegacion = ref([
 }
 
 a {
+    color: rgb(26, 26, 26);
     border: 1px solid;
-    border-color: hsla(160, 100%, 37%, 0.2);
+    border-color: rgb(66, 184, 131, 0.8);
     border-radius: 5px;
     /* Elimina la subrayado de los enlaces y elementos con clase "green" */
     text-decoration: none;
@@ -57,7 +59,8 @@ a {
 
 a:hover {
     /* Cambia el color de fondo al pasar el mouse sobre un enlace */
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgb(66, 184, 131, 0.8);
+    filter: drop-shadow(1px 1px 5px azure);
 }
 
 @media (max-width: 768px) {

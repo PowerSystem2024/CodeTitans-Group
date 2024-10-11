@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue' // Importamos ref de vue para crear una referencia reactiva
 
 const proyectos = ref([
     {
@@ -54,17 +54,20 @@ const proyectos = ref([
 
 </script>
 
+
 <template>
     <div class="cards">
+
         <div v-for="proyecto in proyectos" :key="proyecto.id" class="card">
             <img :src="proyecto.imagen" alt="imagen proyecto" />
             <div class="content">
                 <h2>{{ proyecto.nombre }}</h2>
                 <p>{{ proyecto.descripcion }}</p>
-                <a :href="proyecto.urlProyecto" target="_blank">Ver proyecto</a>
-                <a :href="proyecto.urlGithub" target="_blank">Ver código</a>
+                <a :href="proyecto.urlProyecto" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                <a :href="proyecto.urlGithub" target="_blank" rel="noopener noreferrer">Ver código</a>
             </div>
         </div>
+
     </div>
 
 </template>
@@ -81,7 +84,7 @@ const proyectos = ref([
     background-repeat: no-repeat;
     padding: 20px;
     margin-top: 20px;
-    filter: drop-shadow(1px 1px 5px azure);
+    filter: drop-shadow(1px 1px 5px rgb(66, 184, 131));
 }
 
 .card {
@@ -91,7 +94,7 @@ const proyectos = ref([
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(26, 26, 26);
-    filter: drop-shadow(1px 1px 5px azure);
+
 }
 
 img {

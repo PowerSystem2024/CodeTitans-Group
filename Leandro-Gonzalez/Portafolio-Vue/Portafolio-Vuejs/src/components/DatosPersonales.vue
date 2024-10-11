@@ -36,9 +36,7 @@ const telefono = '+54 9 381-5509162'
       <p>{{ presentacion }}</p>
       <ul class="container-lista">
         <li v-for="red in redesSociales" :key="red.id">
-          <a :href="red.url"
-            ><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"
-          /></a>
+          <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name" /></a>
         </li>
       </ul>
       <h3>☎ Mi telefono personal: {{ telefono }}</h3>
@@ -50,16 +48,18 @@ const telefono = '+54 9 381-5509162'
 <style scoped>
 h1 {
   font-size: 2.5rem;
+  color: rgb(26, 26, 26);
 }
 
 p {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: rgb(26, 26, 26);
 }
 
 .card {
-  background-color: rgb(28, 41, 52);
+  background-color: rgb(66, 184, 131);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -92,5 +92,18 @@ p {
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
+  color: rgb(26, 26, 26);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(26, 26, 26);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(26, 26, 26);
 }
 </style>
