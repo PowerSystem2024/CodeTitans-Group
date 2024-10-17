@@ -4,7 +4,6 @@
   Primero con la clase Scanner, luego con la clase JOptionPane
   
  */
-
 package Java.Clase03.EjerciciosCiclos03;
 
 import javax.swing.JOptionPane;
@@ -25,5 +24,4 @@ public class Ejercicio01_2 {
         }
         JOptionPane.showMessageDialog(null, "El numero ingresado es " + numero + " Finaliza el programa");
     }
-
 }
