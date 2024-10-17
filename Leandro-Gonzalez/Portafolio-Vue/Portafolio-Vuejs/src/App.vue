@@ -5,10 +5,11 @@ import MiEducacion from './components/MiEducacion.vue';
 import MiExperiencia from './components/MiExperiencia.vue';
 import ProyectoComponent from './components/ProyectoComponent.vue';
 import HabilidadesComponent from './components/HabilidadesComponent.vue';
+import InteresesComponent from './components/InteresesComponent.vue';
 </script>
 
 <template>
-  <header>
+  <header id="top">
     <!--Barra de Navegacion-->
     <NavBar />
     <!--Componente Datos Personales-->
@@ -34,8 +35,40 @@ import HabilidadesComponent from './components/HabilidadesComponent.vue';
     </section>
     <section id="intereses">
       <h2>Intereses</h2>
+      <InteresesComponent />
     </section>
   </main>
+
+  <footer>
+    <a href="#top">Inicio</a>
+    <p>© 2024 Leandro Gonzalez - Portafolio Web</p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 26, 26);
+  color: azure;
+  padding: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer :hover {
+  color: rgb(66, 184, 131);
+}
+</style>

@@ -171,6 +171,7 @@ const habilidades = ref([
     background-color: rgb(26, 26, 26);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     filter: drop-shadow(1px 1px 5px rgb(66, 184, 131));
+    cursor: pointer;
 }
 
 .skills-categoria h3 {

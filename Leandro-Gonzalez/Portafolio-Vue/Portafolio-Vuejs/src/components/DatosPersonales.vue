@@ -64,6 +64,7 @@ p {
   padding: 10px;
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .container-lista {

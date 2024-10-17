@@ -85,6 +85,7 @@ const proyectos = ref([
     padding: 20px;
     margin-top: 20px;
     filter: drop-shadow(1px 1px 5px rgb(66, 184, 131));
+    cursor: pointer;
 }
 
 .card {

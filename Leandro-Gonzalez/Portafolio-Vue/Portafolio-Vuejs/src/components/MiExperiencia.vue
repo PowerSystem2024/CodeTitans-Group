@@ -38,6 +38,7 @@ const experiencia = ref([
     padding: 1rem;
     border-radius: 10px;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .titulo {
