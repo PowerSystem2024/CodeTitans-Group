@@ -31,37 +31,6 @@ const misProyectos = ref([
       'https://github.com/NashVille912/SwiftUIProjects/tree/main/GuessTheFlag',
   },
 ])
-
-// misProyectos.value([
-//   {
-//     id: 1,
-//     scr: '',
-//     titulo: 'RM App',
-//     descripcion:
-//       'Aplicacion creada con Flutter para un gimnasio para calcular el uso de cargas en ejercicios como Sentadillas o Peso Muerto',
-//     projectoLink: 'www.google.com.ar',
-//     githubLink: 'https://github.com/NashVille912/RM-Calculator',
-//   },
-//   {
-//     id: 2,
-//     scr: '',
-//     titulo: 'Rock Paper Sissors Lizard Spock',
-//     descripcion:
-//       'Juego reversionado creado con SwiftUI del clasico Piedra Papel y Tijera pero inspirado en el juego de la serie The Big Bang Theory',
-//     projectoLink: 'www.google.com.ar',
-//     githubLink: 'https://github.com/NashVille912/RockPaperScissorsLizardSpock',
-//   },
-//   {
-//     id: 3,
-//     scr: '',
-//     titulo: 'Guess The Flag',
-//     descripcion:
-//       'Juego creado con SwiftUI que consiste en adivinar de que pais es la bandera que aparece en la pantalla',
-//     projectoLink: 'www.google.com.ar',
-//     githubLink:
-//       'https://github.com/NashVille912/SwiftUIProjects/tree/main/GuessTheFlag',
-//   },
-// ])
 </script>
 
 <template>
@@ -108,28 +77,18 @@ const misProyectos = ref([
     background-repeat: no-repeat;
 } */
 
-/* Estilos Fondo Animado de Css de la galería */
-/* La clase 'galeria' es el contenedor principal de la galería de proyectos */
 .galeria {
-  /* Establece el ancho de la galería al 100% del contenedor padre */
   width: 100%;
-  /* Establece la altura de la galería al 100% del contenedor padre */
   height: 100%;
-  /* Utiliza flexbox para organizar los elementos hijos en la galería */
   display: flex;
-  /* Permite que los elementos se ajusten y pasen a la siguiente línea si no caben en una sola fila */
   flex-wrap: wrap;
-  /* Establece un espacio de 20px entre los elementos de la galería */
   gap: 20px;
-  /* Agrega un padding de 20px alrededor de la galería */
   padding: 20px;
-  /* Centra los elementos hijos horizontalmente */
   justify-content: center;
-  /* Aplica un fondo con un degradado de colores */
-  background: linear-gradient(-45deg, #021526, #03346e, #6eacda, #e2e2b6);
-  /* Ajusta el tamaño del fondo para que cubra el área completa */
+  background-color: rgb(26, 26, 26);
+  filter: drop-shadow(1px 1px 5px var(--vt-c-indigo));
   background-size: 400% 400%;
-  /* Aplica una animación al fondo que dura 15 segundos, tiene una transición suave y se repite infinitamente */
+  border-radius: 15px;
   animation: gradient 15s ease infinite;
 }
 
@@ -153,18 +112,14 @@ const misProyectos = ref([
 
 /* La clase 'proyecto' es el contenedor individual de cada proyecto */
 .proyecto {
-  /* Utiliza flexbox para organizar el contenido del proyecto en una columna */
   display: flex;
-  /* Establece la dirección de los elementos en columna */
   flex-direction: column;
-  /* Aplica un borde de 2px sólido y color gris claro (#ddd) alrededor del proyecto */
-  border: 2px solid #ddd;
-  /* Redondea las esquinas del contenedor */
-  border-radius: 8px;
-  /* Oculta cualquier contenido que se desborde del contenedor */
+  border: 1px solid var(--vt-c-indigo);
   overflow: hidden;
   /* Establece un color de fondo claro para el proyecto */
-  background-color: #f9f9f9;
+  background-color: rgb(26, 26, 26);
+  filter: drop-shadow(1px 1px 5px var(--vt-c-indigo));
+  border-radius: 15px;
   /* Define el ancho máximo del proyecto en 222px */
   max-width: 222px;
   /* Hace que el contenedor se ajuste flexiblemente ocupando al menos 300px de ancho */
@@ -196,7 +151,7 @@ const misProyectos = ref([
   /* Define el tamaño de la fuente a 1.3em (relativo al tamaño de fuente del contenedor) */
   font-size: 1.3em;
   /* Aplica un color gris oscuro (#333) al texto */
-  color: #333;
+  color: #fff;
 }
 
 /* Estilo para los párrafos de los proyectos */
@@ -206,7 +161,7 @@ const misProyectos = ref([
   /* Define el tamaño de la fuente a 1em (igual al tamaño de fuente base) */
   font-size: 1em;
   /* Aplica un color gris (#666) al texto */
-  color: #666;
+  color: #b8b8b8;
 }
 
 /* La clase 'proyecto-links' organiza los enlaces y botones del proyecto */
@@ -224,9 +179,9 @@ const misProyectos = ref([
 /* Estilo para el botón 'Ver Más' dentro de la clase 'proyecto-links' */
 .proyecto-links .btn-ver-mas {
   /* Aplica un color de fondo azul (#007BFF) */
-  background-color: #007bff;
+  background-color: rgba(241, 245, 243, 0.856);
   /* Aplica un color de texto blanco */
-  color: #fff;
+  color: #6b6b6b;
   /* Agrega un padding de 10px en vertical y 15px en horizontal */
   padding: 10px 15px;
   /* Redondea las esquinas del botón */
@@ -234,19 +189,20 @@ const misProyectos = ref([
   /* Elimina el subrayado del texto */
   text-decoration: none;
   /* Aplica una transición suave al cambiar el color de fondo */
-  transition: background-color 0.3s;
+  transition: background-color 1s;
 }
 
 /* Estilo para cuando el botón 'Ver Más' es hover */
 .proyecto-links .btn-ver-mas:hover {
   /* Cambia el color de fondo a un azul más oscuro (#0056b3) */
-  background-color: #0056b3;
+  background-color: rgba(241, 245, 243, 0.288);
+  color: #e2e2e2;
 }
 
 /* Estilo para el enlace a GitHub dentro de la clase 'proyecto-links' */
 .proyecto-links .github-link {
   /* Aplica un color gris oscuro (#333) al texto */
-  color: #333;
+  color: #b8b8b8;
   /* Elimina el subrayado del texto */
   text-decoration: none;
   /* Establece el tamaño de fuente a 0.9em (un poco más pequeño que el tamaño base) */
