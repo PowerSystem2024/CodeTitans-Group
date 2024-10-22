@@ -205,10 +205,12 @@ cd ..
 ```
 
 <sub>
-Revisar y ejecutar cada comando, hacerlo como practica <sub/>
+Revisar y ejecutar cada comando, hacerlo como practica 
+<sub/>
 
 <sub>
-Profesor Ariel Betancud</sub>
+Profesor Ariel Betancud
+</sub>
 
 # CLASE 01 MIÉRCOLES 14 DE AGOSTO DEL 2024
 
@@ -507,6 +509,7 @@ git tag -d nombre-de-la-etiqueta
 
 Resumen:
 
-. Las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará significativamente tu flujo de trabajo con Git.
+Las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará significativamente tu flujo de trabajo con Git.
+
 
 ```
