@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import DatosPersonales from './components/DatosPersonales.vue';
+import ProyectosComp from './components/ProyectosComp.vue';
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import DatosPersonales from './components/DatosPersonales.vue';
     </section>
     <section id="proyectos">
       <h2>Proyectos</h2>
+      <ProyectosComp />
     </section>
     <section id="habilidades">
       <h2>Habilidades</h2>
