@@ -5,10 +5,17 @@ const residencia = 'Argentina';
 const presentacion =
   'Hola, somos el grupo CodeTitans y estamos cursando la Tecnicatura Universitaria en programación en la UTN. Nos encontramos en Argentina. ¡Bienvenidos a nuestro portafolio grupal!';
 const integrantes = [
-  {
-    nombre: 'Leandro',
-    apellido: 'Gonzalez',
-  },
+    {   id: 1,
+        nombre: "Leandro",
+        apellido: "Gonzalez",
+    
+    },
+    {
+        id: 2,
+        nombre: "Denis",
+        apellido: "Taraboreli",
+    },
+    
 ];
 const redesSociales = [
   {
