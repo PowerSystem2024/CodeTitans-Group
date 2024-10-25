@@ -5,17 +5,34 @@ const residencia = 'Argentina';
 const presentacion =
   'Hola, somos el grupo CodeTitans y estamos cursando la Tecnicatura Universitaria en programación en la UTN. Nos encontramos en Argentina. ¡Bienvenidos a nuestro portafolio grupal!';
 const integrantes = [
-    {   id: 1,
-        nombre: "Leandro",
-        apellido: "Gonzalez",
-    
-    },
-    {
-        id: 2,
-        nombre: "Denis",
-        apellido: "Taraboreli",
-    },
-    
+  {
+    id: 1,
+    nombre: "Leandro",
+    apellido: "Gonzalez",
+
+  },
+  {
+    id: 2,
+    nombre: "Denis",
+    apellido: "Taraboreli",
+  },
+  {
+    id: 3,
+    nombre: "Ignacio",
+    apellido: "Villarraza",
+  },
+
+  {
+    id: 4,
+    nombre: "Guillermo",
+    apellido: "Pacheco",
+  },
+  {
+    id: 5,
+    nombre: "Martiniano",
+    apellido: "Zallocco",
+  },
+
 ];
 const redesSociales = [
   {
@@ -53,13 +70,7 @@ const redesSociales = [
       </ul>
       <ul class="container-lista">
         <li v-for="red in redesSociales" :key="red.id">
-          <a :href="red.url"
-            ><img
-              class="icon-redsocial"
-              :src="red.src"
-              width="35rem"
-              :alt="red.name"
-          /></a>
+          <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name" /></a>
         </li>
       </ul>
 

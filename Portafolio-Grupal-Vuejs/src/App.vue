@@ -20,7 +20,7 @@ import ComponenteEducacion from './components/ComponenteEducacion.vue';
     </section>
     <section id="experiencia">
       <h2>Experiencia</h2>
-      
+
     </section>
     <section id="proyectos">
       <h2>Proyectos</h2>
@@ -33,6 +33,39 @@ import ComponenteEducacion from './components/ComponenteEducacion.vue';
       <h2>Intereses</h2>
     </section>
   </main>
+  <footer>
+    <a href="#top">Inicio</a>
+    <p>© 2024 CodeTitans - Portafolio Web - UTN</p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--vt-c-indigo);
+  background-size: 400% 400%;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer :hover {
+  color: rgb(66, 184, 131);
+}
+</style>
