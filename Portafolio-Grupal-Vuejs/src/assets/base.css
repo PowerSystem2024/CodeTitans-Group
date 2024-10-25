@@ -1,12 +1,12 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
+  --vt-c-white: #f5e9e9;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
+  --vt-c-black: #fffffe;
   --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --vt-c-black-mute: #0e0202;
 
   --vt-c-indigo: #2c3e50;
 
@@ -18,7 +18,7 @@
   --vt-c-text-light-1: var(--vt-c-indigo);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-2: rgba(11, 4, 4, 0.64);
 }
 
 /* semantic color variables for this project */
@@ -35,6 +35,14 @@
 
   --section-gap: 160px;
 }
+
+section#educacion h2,  
+section#experiencia h2,   
+section#proyectos h2,
+section#habilidades h2,  
+section#intereses h2 {  
+  text-align: center; /* Centrar el texto */  
+}  
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -75,3 +83,5 @@ body {
 li {
   list-style: none;
 }
+
+
