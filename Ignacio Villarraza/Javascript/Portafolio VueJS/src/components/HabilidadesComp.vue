@@ -1,46 +1,4 @@
-<script setup>
-// import { ref } from 'vue'
-
-// // const habilidades = ref([
-// //   {
-// //     id: 1,
-// //     src: '/src/assets/restaurant.png',
-// //     titulo: 'Aplicación de Reservas para Restaurantes (2023)',
-// //     descripcion:
-// //       'Creé una aplicación móvil con Flutter que permite a los usuarios reservar mesas en restaurantes locales',
-// //     proyectoLink: 'https://www.google.com.ar',
-// //     githubLink: 'https://github.com/usuario/proyecto',
-// //   },
-// //   {
-// //     id: 2,
-// //     src: '/src/assets/e-learning.png',
-// //     titulo: 'Plataforma de E-learning (2022)',
-// //     descripcion:
-// //       'Diseñé y desarrollé una plataforma de educación en línea utilizando Django y React. Con diferentes funcionalidades.',
-// //     proyectoLink: 'https://www.google.com.ar',
-// //     githubLink: 'https://github.com/usuario/proyecto',
-// //   },
-// //   {
-// //     id: 3,
-// //     src: '/src/assets/blog.png',
-// //     titulo: 'Blog Personal con CMS (2022)',
-// //     descripcion:
-// //       'Construí un blog personal con un sistema de gestión de contenidos (CMS) personalizado en WordPress.',
-// //     proyectoLink: 'https://www.google.com.ar',
-// //     githubLink: 'https://github.com/usuario/proyecto',
-// //   },
-// //   {
-// //     id: 4,
-// //     src: '/src/assets/restaurant.png',
-// //     titulo: 'Aplicación de Reservas para Restaurantes (2023)',
-// //     descripcion:
-// //       'Creé una aplicación móvil con Flutter que permite a los usuarios reservar mesas en restaurantes locales',
-// //     proyectoLink: 'https://www.google.com.ar',
-// //     githubLink: 'https://github.com/usuario/proyecto',
-// //   },
-// // ])
-// //
-</script>
+<script setup></script>
 
 <template>
   <div class="skills-contenedor">
@@ -119,7 +77,7 @@
         </li>
         <li class="skill">
           <img src="/src/components/icons/english.svg" alt="python" />
-          <span>Ingles: Intermedio/Avanzado</span>
+          <span>Ingles: Avanzado</span>
         </li>
         <li class="skill">
           <img src="/src/components/icons/italian.svg" alt="python" />
@@ -134,9 +92,12 @@
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .skills-contenedor {
   padding: 2rem;
+  background-color: rgb(26, 26, 26);
+  filter: drop-shadow(1px 1px 5px var(--vt-c-indigo));
+  border-radius: 15px;
 }
 
 .skills-categoria {
@@ -170,5 +131,74 @@
   box-shadow: 0px 4px 12px rgba(2, 151, 151, 0.963);
   flex: 1 1 200px;
   max-width: 250px;
+}
+</style> -->
+<style scoped>
+.skills-contenedor {
+  padding: 2rem;
+  background-color: rgb(26, 26, 26);
+  filter: drop-shadow(1px 1px 5px var(--vt-c-indigo));
+  border-radius: 15px;
+}
+
+.skills-categoria {
+  margin-bottom: 20px;
+}
+
+.skills-categoria h3 {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: aliceblue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(241, 245, 243, 0.288);
+  padding: 0.3em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px var(--vt-c-indigo);
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.skill:hover {
+  background-color: rgba(148, 148, 148, 0.856);
+  font-size: 1.1em;
+  transition: 1s ease-out;
+  color: #fff;
+}
+
+.skill img {
+  width: 35px;
+  height: 35px;
+}
+
+.skill span {
+  font-size: 1em;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .skills-categoria h3 {
+    justify-content: center;
+  }
+
+  .skill {
+    justify-content: center;
+  }
 }
 </style>

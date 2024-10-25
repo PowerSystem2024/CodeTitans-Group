@@ -5,6 +5,7 @@ import EducacionComp from './components/EducacionComp.vue'
 import ExperienciaComp from './components/ExperienciaComp.vue'
 import ProyectosComp from './components/ProyectosComp.vue'
 import HabilidadesComp from './components/HabilidadesComp.vue'
+import InteresesComp from './components/InteresesComp.vue'
 </script>
 
 <template>
@@ -24,7 +25,23 @@ import HabilidadesComp from './components/HabilidadesComp.vue'
     <section id="habilidades"><h2>Habilidades</h2></section>
     <HabilidadesComp />
     <section id="intereses"><h2>Intereses</h2></section>
+    <InteresesComp />
   </main>
+  <footer>
+    <a href="#top">Inicio</a>
+    <p>© 2024 Ignacio Villarraza - Portafolio Web</p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  color: #fff;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+</style>
