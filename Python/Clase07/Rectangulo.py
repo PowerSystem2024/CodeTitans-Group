@@ -12,3 +12,4 @@ base = float(input("Ingrese la base del rectangulo: "))
 altura = float(input("Ingrese la altura del rectangulo: "))
 rectangulo1 = Rectangulo(base, altura)
 print(f'El area del rectangulo es: {rectangulo1.calcular_area():.2f}')
+
