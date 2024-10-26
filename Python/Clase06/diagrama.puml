@@ -1,0 +1,30 @@
+@startuml
+
+class Persona{
+    -nombre: str
+    -apellido: str
+    -edad: int
+
+    +mostrar_detalle()
+
+
+}
+
+object persona1 {
+
+    -nombre: str = 'Ariel'
+    -apellido: str = 'Betancud'
+    -edad: int = 40
+}
+object persona2 {
+
+    -nombre: str = 'Osvaldo'
+    -apellido: str = 'Giodanini'
+    -edad: int = 45
+}
+
+persona1 --|> Persona
+Persona2 --|> Persona
+
+
+@enduml
