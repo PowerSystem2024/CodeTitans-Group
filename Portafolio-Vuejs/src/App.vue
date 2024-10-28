@@ -10,6 +10,8 @@ import DatosPersonales from './components/DatosPersonales.vue';
 import ListaEducacion from './components/ListaEducacion.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 import ProyectoComponente from './components/ProyectoComponente.vue';
+import HabilidadesComponente from './components/HabilidadesComponente.vue';
+import InteresesComponentes from './components/InteresesComponentes.vue';
 </script>
 
 
@@ -41,8 +43,13 @@ import ProyectoComponente from './components/ProyectoComponente.vue';
       <ProyectoComponente />
     </section>
     
-    <section id="habilidades"><h2>Habilidades</h2></section>
-    <section id="intereses"><h2>Intereses</h2></section>
+    <section id="habilidades"><h2>Habilidades</h2>
+    <HabilidadesComponente />
+    </section>
+
+    <section id="intereses"><h2>Intereses</h2>
+    <InteresesComponentes />
+    </section>
   </main>
 </template>
 
