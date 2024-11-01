@@ -1,10 +1,13 @@
+#Importamos la clase Empleado
 from Empleado import Empleado
 
-class Gerente(Empleado):
-    def __init__(self, nombre, sueldo, Departamento):
+#Creamos la clase Gerente
+class Gerente(Empleado): #Hereda de la clase Empleado
+    def __init__(self, nombre, sueldo, departamento):
         super().__init__(nombre, sueldo)
-        self.departamento = Departamento
-
-
+        self.departamento = departamento
+        
     def __str__(self):
-        return f"Empleado [Departamento: {self.departamento}] {super().__str__()}"
+        return f"Gerente: {self.nombre}, Sueldo: {self.sueldo}, Departamento: {self.departamento}"
+    
+

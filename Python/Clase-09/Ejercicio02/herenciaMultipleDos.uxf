@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>60</y><w>170</w><h>150</h></coordinates><panel_attributes>&lt;&lt;FiguraGeometrica&gt;&gt;
+--
++alto
++ancho
+-
++get_alto()
++set_alto(alto)
++get_ancho()
++set_ancho(ancho)
++__srt__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>340</y><w>150</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
++area()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>60</y><w>160</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Color&gt;&gt;
+--
++color
+-
++get_color()
++set_colot(color)
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>150</y><w>410</w><h>210</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>390;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>200</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>340</y><w>150</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Rectangulo&gt;&gt;
+--
++area()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>150</y><w>130</w><h>210</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;100;190</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>200</y><w>500</w><h>150</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;480;130</additional_attributes></element></diagram>
