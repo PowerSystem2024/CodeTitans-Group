@@ -3,13 +3,13 @@ import NavBar from './components/NavBar.vue';
 import DatosPersonales from './components/DatosPersonales.vue';
 import ProyectosComp from './components/ProyectosComp.vue';
 import ComponenteEducacion from './components/ComponenteEducacion.vue';
-import Intereses from './components/Intereses.vue';
+import InteresesComponente from './components/InteresesComponente.vue';
 import HabilidadesComp from './components/HabilidadesComp.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 </script>
 
 <template>
-  <header>
+  <header id="top">
     <!--Barra de Navegacion-->
     <NavBar />
     <!-- Datos personales -->
@@ -34,7 +34,7 @@ import ExperienciaComponente from './components/ExperienciaComponente.vue';
     </section>
     <section id="intereses">
       <h2>Intereses</h2>
-      <Intereses />
+      <InteresesComponente />
     </section>
   </main>
   <footer>
@@ -53,7 +53,7 @@ footer {
   color: #333;
   border-radius: 10px;
   padding: 20px;
-  margin-top: 30px;
+  margin: 1rem;
   cursor: pointer;
   box-shadow: 0 0 10px var(--vt-c-indigo);
   background-size: 400% 400%;

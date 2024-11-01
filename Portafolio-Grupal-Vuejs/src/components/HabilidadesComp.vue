@@ -1,59 +1,95 @@
-<script setup></script>
+<script setup>
+import python from '/src/components/icons/python.svg'
+import js from '/src/components/icons/JS.svg'
+import java from '/src/components/icons/java.svg'
+import mysql from '/src/components/icons/mysql.svg'
+import git from '/src/components/icons/git.svg'
+import vue from '/src/components/icons/vue.svg'
+import uml from '/src/components/icons/uml.svg'
+import espaniol from '/src/components/icons/espaniol.svg'
+import english from '/src/components/icons/english.svg'
+import { ref } from 'vue';
+
+const habilidades = ref([
+  {
+    id: 1,
+    nombre: "Lenguajes de Programacion",
+    habilidades: [
+      {
+        id: 1,
+        src: python,
+        nombre: "Python",
+      },
+      {
+        id: 2,
+        src: js,
+        nombre: "Javascript",
+      },
+      {
+        id: 3,
+        src: java,
+        nombre: "Java",
+      },
+      {
+        id: 4,
+        src: mysql,
+        nombre: "SQL",
+      },
+    ],
+  },
+  {
+    id: 2,
+    nombre: "Frameworks y Otros",
+    habilidades: [
+      {
+        id: 1,
+        src: mysql,
+        nombre: "MySQL",
+      },
+      {
+        id: 2,
+        src: git,
+        nombre: "Git",
+      },
+      {
+        id: 3,
+        src: vue,
+        nombre: "Vue",
+      },
+      {
+        id: 4,
+        src: uml,
+        nombre: "UML",
+      },
+    ],
+  },
+  {
+    id: 3,
+    nombre: "Idiomas",
+    habilidades: [
+      {
+        id: 1,
+        src: espaniol,
+        nombre: "Español",
+      },
+      {
+        id: 2,
+        src: english,
+        nombre: "Ingles",
+      },
+    ],
+  },
+]);
+</script>
 
 <template>
   <div class="skills-contenedor">
-    <div class="skills-categoria">
-      <h3>Lenguajes de Programacion</h3>
+    <div v-for="habilidad in habilidades" :key="habilidad.id" class="skills-categoria">
+      <h3>{{ habilidad.nombre }}</h3>
       <ul class="skills">
-        <li class="skill">
-          <img src="/src/components/icons/python.svg" alt="python" />
-          <span>Python</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/JS.svg" alt="python" />
-          <span>Javascript</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/java.svg" alt="python" />
-          <span>Java</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/database.svg" alt="python" />
-          <span>SQL</span>
-        </li>
-      </ul>
-    </div>
-    <div class="skills-categoria">
-      <h3>Frameworks y Otros:</h3>
-      <ul class="skills">
-        <li class="skill">
-          <img src="/src/components/icons/mysql.svg" alt="python" />
-          <span>MySQL</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/git.svg" alt="python" />
-          <span>Git</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/vue.svg" alt="python" />
-          <span>Vue</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/uml.svg" alt="python" />
-          <span>UML</span>
-        </li>
-      </ul>
-    </div>
-    <div class="skills-categoria">
-      <h3>Idiomas</h3>
-      <ul class="skills">
-        <li class="skill">
-          <img src="/src/components/icons/espaniol.svg" alt="python" />
-          <span>Español</span>
-        </li>
-        <li class="skill">
-          <img src="/src/components/icons/english.svg" alt="python" />
-          <span>Ingles</span>
+        <li v-for="habilidad in habilidad.habilidades" :key="habilidad.id" class="skill">
+          <img :src="habilidad.src" alt="habilidad.nombre" />
+          <span>{{ habilidad.nombre }}</span>
         </li>
       </ul>
     </div>
@@ -63,9 +99,11 @@
 <style scoped>
 .skills-contenedor {
   padding: 2rem;
+  margin: 1rem;
   background-color: azure;
   box-shadow: 0 0 10px var(--vt-c-indigo);
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .skills-categoria {

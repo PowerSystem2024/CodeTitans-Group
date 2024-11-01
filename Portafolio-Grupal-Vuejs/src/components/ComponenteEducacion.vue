@@ -1,44 +1,47 @@
 <script setup>
+import { ref } from 'vue';
 
+const educacion = ref([
+  {
+    id: 1,
+    fecha: "Mayo 2024",
+    descripcion: "Adquirimos los conocimientos en Fundamentos de programacion en pseudocodigo utilizando Pseint",
+  },
+  {
+    id: 2,
+    fecha: "Abril 2024",
+    descripcion: "Comenzamos con los lenguajes de programacion Java - Javascript - Python  y manejo de GitHub y GitBash",
+  },
+  {
+    id: 3,
+    fecha: "Julio 2024",
+    descripcion: "Desarrollamos un CRUD para el proyecto integrador de Programacion I en Pseint",
+  },
+  {
+    id: 4,
+    fecha: "Septiembre 2024",
+    descripcion: "Introduccion a POO con Java - JavaScript - Python",
+  },
+  {
+    id: 5,
+    fecha: "Noviembre 2024",
+    descripcion: "Desarrollamos un CRUD en Java para el proyecto integrador de Programacion II",
+  },
+
+]);
 </script>
 
 
 <template>
-<div class="timeline">
-  <div class="outer">
-    <div class="card">
+  <div class="timeline">
+    <div v-for="item in educacion" :key="item.id" class="card">
       <div class="info">
-        <h3 class="title">Mayo 2024</h3>
-        <p>Adquirimos los conocimientos en Fundamentos de programacion en pseudocodigo utilizando Pseint</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Abril 2024</h3>
-        <p>Comenzamos con los lenguajes de programacion Java - Javascript - Python  y manejo de GitHub y GitBash</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Julio 2024 </h3>
-        <p>Desarrollamos un CRUD para el proyecto integrador de Programacion I en Pseint</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Septiembre 2024</h3>
-        <p>Introduccion a POO con Java - JavaScript - Python</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Noviembre 2024</h3>
-        <p>Desarrollamos un CRUD en Java para el proyecto integrador de Programacion II</p>
+        <h3 class="title">{{ item.fecha }}</h3>
+        <p>{{ item.descripcion }}</p>
       </div>
     </div>
   </div>
-</div>
-</template> 
+</template>
 
 <style scoped>
 :root {
@@ -61,7 +64,7 @@ body {
 
 /* Timeline Container */
 .timeline {
- height: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -73,6 +76,7 @@ body {
   box-shadow: 0 0 10px var(--vt-c-indigo);
   background-size: 400% 400%;
   border: 1px solid rgba(71, 71, 71, 0.521);
+  cursor: pointer;
 }
 
 /* Card container */
@@ -85,16 +89,18 @@ body {
 .card:nth-child(odd) {
   padding: 30px 0 30px 30px;
 }
+
 .card:nth-child(even) {
   padding: 30px 30px 30px 0;
 }
+
 /* Global ::before */
 .card::before {
   content: "";
   position: absolute;
   width: 50%;
   border: solid rgb(167, 199, 218);
-  
+
 }
 
 /* Setting the border of top, bottom, left */
@@ -171,19 +177,17 @@ body {
 }
 
 /* text right if the card is even  */
-.card:nth-child(even) > .info > .title {
+.card:nth-child(even)>.info>.title {
   text-align: right;
 }
 
 /* setting dot to the left if the card is odd */
-.card:nth-child(odd) > .info > .title::before {
+.card:nth-child(odd)>.info>.title::before {
   left: -45px;
 }
 
 /* setting dot to the right if the card is odd */
-.card:nth-child(even) > .info > .title::before {
+.card:nth-child(even)>.info>.title::before {
   right: -45px;
 }
-
 </style>
-  

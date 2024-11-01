@@ -2,13 +2,7 @@
   <nav class="navbar">
     <div class="navbar-menu">
       <ul>
-        <a
-          v-for="nav in navegacion"
-          :key="nav.nombre"
-          :href="nav.enlace"
-          class="nav-item"
-          >{{ nav.nombre }}</a
-        >
+        <a v-for="nav in navegacion" :key="nav.nombre" :href="nav.enlace" class="nav-item">{{ nav.nombre }}</a>
       </ul>
     </div>
   </nav>
@@ -28,34 +22,49 @@ const navegacion = ref([
 <style scoped>
 .navbar {
   background-color: azure;
-  border-radius: 10px; /* Establece el color de fondo usando una variable CSS */
-  color: #333; /* Establece el color del texto en blanco */
-  padding: 0.5rem 1rem; /* Añade un padding de 0.5rem arriba y abajo, y 1rem a los lados */
-  align-items: center; /* Centra verticalmente los elementos dentro de la navbar */
+  border-radius: 10px;
+  /* Establece el color de fondo usando una variable CSS */
+  color: #333;
+  /* Establece el color del texto en blanco */
+  padding: 0.5rem 1rem;
+  /* Añade un padding de 0.5rem arriba y abajo, y 1rem a los lados */
+  align-items: center;
+  /* Centra verticalmente los elementos dentro de la navbar */
   box-shadow: 0 0 10px var(--vt-c-indigo);
+  cursor: pointer;
 }
 
 .navbar-item {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  margin-right: 1rem; /* Añade un margen derecho de 1rem entre los elementos */
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  margin-right: 1rem;
+  /* Añade un margen derecho de 1rem entre los elementos */
 }
 
 .navbar-menu {
-  display: flex; /* Organiza los elementos en línea usando flexbox */
-  justify-content: flex-end; /* Alinea los elementos al final de la navbar */
+  display: flex;
+  /* Organiza los elementos en línea usando flexbox */
+  justify-content: flex-end;
+  /* Alinea los elementos al final de la navbar */
 }
 
 .nav-list {
-  list-style: none; /* Elimina los puntos o números de las listas */
+  list-style: none;
+  /* Elimina los puntos o números de las listas */
 }
 
 a {
-  border: 1px solid; /* Añade un borde sólido de 1px */
+  border: 1px solid;
+  /* Añade un borde sólido de 1px */
   border-color: rgba(83, 88, 88, 0.774);
-  border-radius: 5px; /* Redondea las esquinas del borde */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  transition: 0.4s; /* Añade una transición suave de 0.4s para los cambios de estilo */
-  padding: 5px; /* Añade un padding de 5px alrededor del contenido */
+  border-radius: 5px;
+  /* Redondea las esquinas del borde */
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  transition: 0.4s;
+  /* Añade una transición suave de 0.4s para los cambios de estilo */
+  padding: 5px;
+  /* Añade un padding de 5px alrededor del contenido */
   color: #333;
   margin: 2px;
 }
@@ -66,9 +75,12 @@ a:hover {
 
 @media (max-width: 768px) {
   .navbar-menu {
-    display: flex; /* Organiza los elementos en línea usando flexbox */
-    justify-content: flex-end; /* Alinea los elementos al final de la navbar */
-    width: 100%; /* Asegura que la navbar ocupe el 100% del ancho en pantallas pequeñas */
+    display: flex;
+    /* Organiza los elementos en línea usando flexbox */
+    justify-content: flex-end;
+    /* Alinea los elementos al final de la navbar */
+    width: 100%;
+    /* Asegura que la navbar ocupe el 100% del ancho en pantallas pequeñas */
   }
 }
 </style>

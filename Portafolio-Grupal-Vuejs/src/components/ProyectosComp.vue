@@ -43,20 +43,10 @@ const misProyectos = ref([
           {{ proyecto.descripcion }}
         </p>
         <div class="proyecto-links">
-          <a
-            :href="proyecto.proyectoLink"
-            class="btn-ver-mas"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver Proyecto</a
-          >
-          <a
-            :href="proyecto.githubLink"
-            class="github-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver Código en GitHub</a
-          >
+          <a :href="proyecto.proyectoLink" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver
+            Proyecto</a>
+          <a :href="proyecto.githubLink" class="github-link" target="_blank" rel="noopener noreferrer">Ver Código en
+            GitHub</a>
         </div>
       </div>
     </li>
@@ -102,6 +92,7 @@ const misProyectos = ref([
   border-radius: 15px;
   max-width: 222px;
   flex: 1 1 300px;
+  cursor: pointer;
 }
 
 .proyecto img {

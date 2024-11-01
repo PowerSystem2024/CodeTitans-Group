@@ -1,4 +1,9 @@
 <script setup>
+
+import linkedin from '/src/components/icons/linkedin_icon.svg';
+import github from '/src/components/icons/github_icon.svg'
+import cv from '/src/components/icons/cv_resume_icon.svg'
+
 const title = 'CodeTitans - Datos Personales';
 const description = 'Tecnicatura Universitaria en programación';
 const residencia = 'Argentina';
@@ -38,18 +43,18 @@ const redesSociales = [
   {
     id: 1,
     name: 'LinkedIn',
-    src: '/src/components/icons/linkedin_icon.svg',
-    url: 'https://www.linkedin.com/in/leandro-gonzalez-4b4b2a1b3/',
+    src: linkedin,
+    url: '',
   },
   {
     id: 2,
-    src: '/src/components/icons/github_icon.svg',
+    src: github,
     name: 'GitHub',
-    url: 'https://github.com/leanlag87',
+    url: '',
   },
   {
     id: 3,
-    src: '/src/components/icons/cv_resume_icon.svg',
+    src: cv,
     name: 'curriculum',
     url: '',
   },
@@ -86,6 +91,7 @@ const redesSociales = [
   align-items: center;
   flex-direction: column;
   margin: 2rem;
+  cursor: pointer;
 }
 
 .card {
