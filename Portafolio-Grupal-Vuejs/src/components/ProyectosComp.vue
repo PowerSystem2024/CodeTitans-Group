@@ -1,10 +1,13 @@
 <script setup>
 import { ref } from 'vue';
+import pseint from '/src/assets/images/pseint.png';
+import database from '/src/assets/images/database.png';
+import java from '/src/assets/images/java.png';
 
 const misProyectos = ref([
   {
     id: 1,
-    scr: '/src/assets/images/pseint.png',
+    scr: pseint,
     titulo: 'DataBase Admin',
     descripcion:
       'Aplicacion creada como proyecto integrador en Pseudo-Codigo con PSeInt para la Materia Fundamentos de Programacion',
@@ -13,7 +16,7 @@ const misProyectos = ref([
   },
   {
     id: 2,
-    scr: '/src/assets/images/database.png',
+    scr: database,
     titulo: 'MySql',
     descripcion:
       'DataBase creada para los proyectos y actividades de la materia BASES DE DATOS I del Segundo Semestre',
@@ -22,7 +25,7 @@ const misProyectos = ref([
   },
   {
     id: 3,
-    scr: '/src/assets/images/java.png',
+    scr: java,
     titulo: 'DataBase Admin Java',
     descripcion:
       'Proyecto Integrador del semestre anterior que realizamos en PSeInt pero ahora Migrado al lenguaje Java',

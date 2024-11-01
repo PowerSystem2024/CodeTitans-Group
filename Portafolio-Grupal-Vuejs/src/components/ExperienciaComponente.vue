@@ -1,11 +1,15 @@
 <script setup>
 import { ref } from 'vue';
+import pseint from '/src/assets/peseint.svg';
+import java from '/src/assets/java.svg';
+import deploy from '/src/assets/deploy.svg';
+
 const titulo = 'Desarrolladores Full Stack';
 const fecha = 'Desde Marzo 2024 a la actualidad';
 const experiencias = ref([
-    { id: 1, src: '/src/assets/peseint.svg', parrafo: 'Desarrollamos un programa gestor de Base de Datos de personas en pseudo codigo con el programa PSeINT' },
-    { id: 2, src: '/src/assets/java.svg', parrafo: 'Modificamos y adaptamos el codigo hecho en PSeINT para traducirlo al lenguaje Java' },
-    { id: 3, src: '/src/assets/deploy.svg', parrafo: 'Creamos un portfolio desplegado en la web de nuestro equipo de trabajo' }
+    { id: 1, src: pseint, parrafo: 'Desarrollamos un programa gestor de Base de Datos de personas en pseudo codigo con el programa PSeINT' },
+    { id: 2, src: java, parrafo: 'Modificamos y adaptamos el codigo hecho en PSeINT para traducirlo al lenguaje Java' },
+    { id: 3, src: deploy, parrafo: 'Creamos un portfolio desplegado en la web de nuestro equipo de trabajo' }
 ]);
 
 </script>
