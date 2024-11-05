@@ -64,15 +64,16 @@ body {
 
 /* Timeline Container */
 .timeline {
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  width: 95%;
+  height: 100%;
   background-color: azure;
   border-radius: 10px;
-  gap: 20px;
   padding: 20px;
-  margin: 1rem;
+  margin: 1rem auto;
   box-shadow: 0 0 10px var(--vt-c-indigo);
   background-size: 400% 400%;
   border: 1px solid rgba(71, 71, 71, 0.521);
