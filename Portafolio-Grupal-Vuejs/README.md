@@ -35,7 +35,7 @@ Este proyecto fue desarrollado utilizando las siguientes tecnologías:
 Sigue estos pasos para instalar el proyecto localmente: 
 1. Clona el repositorio: 
 
-    `git clone https://github.com/PowerSystem2024/CodeTitans-Group.git`
+    `git clone https://github.com/PowerSystem2024/CodeTitans-Group/tree/main/Portafolio-Grupal-Vuejs`
 
 2.   Cambia al directorio del proyecto:
     
