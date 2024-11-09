@@ -1,3 +1,7 @@
+from monitor import Monitor
+from teclado import Teclado
+from raton import Raton
+
 class Computadora:
 
     contador_computadoras = 0
@@ -23,10 +27,10 @@ if __name__ == "__main__":
     raton1 = Raton("HP", "USB") # type: ignore
     monitor1 = Monitor("HP", "15 Pulgadas") # type: ignore
     computadora1 = Computadora("HP", monitor1, teclado1, raton1)
-print(computadora1)
+#print(computadora1)
 
 teclado2 = Teclado("Acer", "Bluetooth") # type: ignore
 monitor2 = Monitor("Acer", "27 Pulgadas") # type: ignore
 raton2 = Raton("Acer", "USB") # type: ignore
 computadora2 = Computadora("Acer", monitor2, teclado2, raton2)
-print(computadora2)
+#print(computadora2)
